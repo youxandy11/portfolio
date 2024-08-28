@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/*--共通部分--*/
+html{
+    font-size: 100%;
+    font-family: "Italiana", "sans-serif" ,"" ;
+    color:#000;
+    background-color: #FDF2F2;
+}
+
+*{
+box-sizing:border-box
+}
+li{
+    list-style: none;
+    padding-left: 30px;
+}
+ul{
+    display: flex;
+}
+a{
+    color: #000;
+}
+.header a{
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    display: block;
+}
+.header{
+    background-color: #E9C1D9;
+    display: flex;
+    justify-content: space-between;
+    padding:0 80px;
+    align-items: center;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.main-visual{
+    width: 100%;
+}
+.box{
+    width: 80%;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+    margin:0 auto ;
+    text-align: center;
+}
+.title{
+    padding: 80px 0 30px 0;
+    text-align: center;
+}
+.me{
+    width: 30%;
+    height: 30%;
+}
+#about .background{
+    padding-bottom: 80px;
+}
+
+.background{
+    padding-top:80px;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.profile{
+    padding: 30px 20px;
+    margin-left: 30px;
+    width: 30%;
+    background-color: #D9D9D9;
+    text-align: left;
+}
+#discription{
+    background-color: #fff;
+}
+.contents{
+    text-align: center;
+    
+    
+}
+.boxs{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    
+}
+.one{
+    margin: auto;
+    padding-bottom: 70px;
+    
+}
+.textbox{
+    padding:10px;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    margin: 15px auto 30px auto;
+}
+.LP{
+    width: 500px;
+    height: 600px;
+}
+#work{
+    text-align: center;
+}
+
+
+#work .textbox,#contact .textbox{
+    width: 40%;
+}
+footer{
+    background-color: #E9C1D9;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding:60px 0;
+}
+.contain{
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    img{
+        max-width: 100%;
+        width: 100vw;
+    }
+    body {
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        position:unset;
+    }
+    .header ul{
+        display: none;
+    }
+    .header img{
+        width: 70%;
+        
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .me,.profile{
+        width: 100vw;
+    }
+    .boxs, .one {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .profile{
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+    .one{
+        padding: 10px 0;
+    }
+    #work .textbox{
+       width: 100%;
+    }
+    .contents{
+       
+    }
+
+}
